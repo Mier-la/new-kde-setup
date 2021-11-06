@@ -4,11 +4,11 @@ This repository was made for quickly setting up new KDE-based Linux machines by 
 ## Basic use
 ### On Arch Distributions
 Run the following commands in order:
-1. `sudo pacman -Sy $(<add-wanted-packages.list)`
-2. `sudo pacman -R $(<remove-kde-packages.list)`
-3. `sudo pacman -Qdtq | sudo pacman -Rs -` 
+1. `sudo pacman -Sy $(<add-wanted-packages.list)` - Add packages contained within add-wanted-packages.list.
+2. `sudo pacman -R $(<remove-kde-packages.list)` - Remove packages contained within remove-kde-packages.list.
+3. `sudo pacman -Qdtq | sudo pacman -Rs -` - Remove any packages no longer used. If there is an  error claiming there is an empty stdin, it means there are no unused packages on the system.
 ### On Debian/Ubuntu Distributions
 Run the following commands in order:
-1. `sudo apt install $(<add-wanted-packages.list)`
-2. `sudo apt remove $(<remove-kde-packages.list)`
-3. `sudo apt autoremove`
+1. `sudo apt install $(<add-wanted-packages.list)` - Add packages contained within add-wanted-packages.list.
+2. `sudo apt remove $(<remove-kde-packages.list)` - Remove packages contained within remove-kde-packages.list
+3. `sudo apt autoremove` - Remove any packages no longer used.
